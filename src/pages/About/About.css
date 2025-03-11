@@ -1,0 +1,19 @@
+#container-about {
+  display: flex;
+  flex-direction: row;
+  height: 80vh;
+  align-items: center;
+  color: white;
+  padding: 0 100px;
+}
+
+img {
+  max-width: 600px;
+  max-height: 600px;
+  border-radius: 100%;
+  border: 10px solid white;
+}
+
+#container-about-writeup {
+  padding: 0 100px 100px 100px;
+}
