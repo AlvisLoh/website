@@ -30,12 +30,7 @@ export default function Footer() {
           </a>
         </li>
       </ul>
-      <ul id="footer-section-3">
-        <li>Book a session</li>
-        <li>About</li>
-        <li>Blog</li>
-        <li>Testimonials</li>
-      </ul>
+      
     </footer>
   );
 }

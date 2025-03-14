@@ -1,6 +1,7 @@
 #root {
   background-image: url("/src/assets/mountain-background.jpg");
   background-size: cover;
+  background-position: center;
 }
 
 nav {
@@ -13,9 +14,9 @@ nav ul {
   justify-content: space-around;
   list-style: none;
   margin: 0;
-  padding: 30px;
+  padding: 20px;
   font-weight: bolder;
-  font-size: x-large;
+  font-size: large;
   color: white;
 }
 
@@ -30,19 +31,22 @@ nav a {
   justify-content: center;
   align-items: center;
   height: 80vh;
+  padding: 20px;
+  text-align: center;
 }
 
 #hero h1 {
   text-align: center;
-  max-width: 800px;
+  max-width: 90%;
   margin: 0;
   color: white;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
 }
 
 #hero p {
   color: white;
-  font-size: x-large;
+  font-size: large;
+  max-width: 90%;
 }
 
 #hero button {
@@ -50,7 +54,8 @@ nav a {
   border: none;
   border-radius: 30px;
   padding: 10px 20px;
-  font-size: x-large;
+  font-size: large;
+  margin-top: 10px;
 }
 
 #hero button:hover {
@@ -69,61 +74,60 @@ footer {
   background-color: #111114;
   color: white;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
 }
 
-#footer-section-1 {
-  text-align: start;
-  list-style: none;
-  padding: 0px 0px 0px 40px;
-}
-
-#footer-section-1 li {
-  font-size: large;
-}
-
-#footer-section-1 li:first-child {
-  font-size: larger;
-  font-weight: bold;
-}
-
-#footer-section-1 a {
-  text-decoration: none;
-  color: white;
-}
-
-#footer-section-2 {
+#footer-section-1, #footer-section-2 {
   text-align: center;
   list-style: none;
-  padding: 0px 0px 0px 40px;
+  padding: 5px 20px;
 }
 
-#footer-section-2 li {
+#footer-section-1 li, #footer-section-2 li {
+  font-size: medium;
+}
+
+#footer-section-1 li:first-child, #footer-section-2 li:first-child {
   font-size: large;
-}
-
-#footer-section-2 li:first-child {
-  font-size: larger;
   font-weight: bold;
 }
 
-#footer-section-2 a {
+#footer-section-1 a, #footer-section-2 a {
   text-decoration: none;
   color: white;
 }
 
-#footer-section-3 {
-  text-align: end;
-  list-style: none;
-  padding: 0px 40px 0px 0px;
-}
-
-#footer-section-3 li {
-  font-size: large;
-}
-
-#footer-section-3 a {
-  text-decoration: none;
-  color: white;
+@media (min-width: 768px) {
+  nav ul {
+    font-size: x-large;
+  }
+  
+  #hero h1 {
+    font-size: 3.5rem;
+  }
+  
+  #hero p {
+    font-size: x-large;
+  }
+  
+  #hero button {
+    font-size: x-large;
+  }
+  
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  #footer-section-1 {
+    text-align: start;
+    padding: 0px 0px 0px 40px;
+  }
+  
+  #footer-section-2 {
+    text-align: end;
+    padding: 0px 40px 0px 0px;
+  }
 }
