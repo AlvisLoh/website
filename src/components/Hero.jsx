@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function Hero() {
   return (
@@ -6,7 +6,7 @@ export default function Hero() {
       <h1>Coaching, education consulting, and networking</h1>
       <p>Get advice from a certified coach</p>
       <button type="submit">
-        <a href="/book-a-session">Book a session</a>
+        <NavLink to="/book-a-session">Book a session</NavLink>
       </button>
     </div>
   );

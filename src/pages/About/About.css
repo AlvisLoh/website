@@ -9,11 +9,12 @@
 }
 
 img {
-  max-width: 50%;
-  height: 50%;
+ max-width: min(50%, 300px); 
+  height: auto;
   border-radius: 100%;
   border: 10px solid white;
 }
+
 
 #container-about-writeup {
   padding: 20px;
@@ -34,7 +35,7 @@ img {
   }
   
   img {
-    max-width: 600px;
+    min-width: 250px;
     max-height: 600px;
   }
   

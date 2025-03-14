@@ -8,7 +8,7 @@ export default function Navbar() {
           <NavLink to="/">Alvis Loh</NavLink>
         </li>
         <li>
-          <a href="/book-a-session">Book a session</a>
+          <NavLink to="/book-a-session">Book a session</NavLink>
         </li>
         <li>
           <NavLink to="/about">About</NavLink>

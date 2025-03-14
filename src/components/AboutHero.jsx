@@ -3,7 +3,7 @@ export default function AboutHero() {
     <>
       <div id="container-about">
         <img
-          src="/src/assets/alvis-loh-portrait.jpg"
+          src="/website/alvis-loh-portrait.jpg"
           alt="A portrait of Alvis Loh"
         />
         <div id="container-about-writeup">
@@ -26,8 +26,7 @@ export default function AboutHero() {
             Business Management (Merit) from Nanyang Polytechnic, I have honed
             my skills in strategic planning, leadership, and innovation.
             <br />
-            <br />
-            I believe in empowering individuals to overcome challenges,
+            <br />I believe in empowering individuals to overcome challenges,
             unlock their potential, and create meaningful impact in their lives.
             Whether in the field of intelligence or personal growth, my mission
             remains the same—to lead, inspire, and drive transformation. Let’s
