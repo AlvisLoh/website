@@ -93,7 +93,7 @@ export default function Navbar() {
           top: "100%",
           padding: "1rem 5%",
           boxSizing: "border-box",
-          zIndex: 1,
+          zIndex: 9999, // <-- Set high z-index here
         }}
         className="nav-links"
         aria-label="Main navigation"
