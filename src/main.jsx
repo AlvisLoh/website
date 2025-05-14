@@ -5,6 +5,9 @@ import App from "./pages/App/App.jsx";
 import BookSession from "./pages/BookSession/BookSession.jsx";
 import { createHashRouter, RouterProvider } from "react-router-dom";
 import About from "./pages/About/About.jsx";
+import Testimonials from "./pages/Testimonials/Testimonials.jsx";
+import Services from "./pages/Services/Services.jsx";
+import AboutCoaching from "./pages/AboutCoaching/AboutCoaching.jsx";
 
 const router = createHashRouter([
   {
@@ -19,7 +22,20 @@ const router = createHashRouter([
   {
     path:"/about",
     element: <About />
-  }
+  },
+  {
+    path: "/services",
+    element: <Services />
+  },
+  {
+    path: "/testimonials",
+    element: <Testimonials />
+  },
+  {
+    path: "/my-coaching",
+    element: <AboutCoaching />
+
+  },
 ]);
 
 createRoot(document.getElementById("root")).render(

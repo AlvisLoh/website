@@ -6,7 +6,7 @@ export default function Hero() {
       id="hero"
       style={{
         width: "100%",
-        height: "100vh",
+        height: "100%",
         minHeight: "600px",
         display: "flex",
         alignItems: "center",
@@ -72,7 +72,7 @@ export default function Hero() {
             flexWrap: "wrap",
           }}
         >
-          <NavLink to="/products">
+          <NavLink to="/my-coaching">
             <button
               type="button"
               style={{
@@ -102,7 +102,7 @@ export default function Hero() {
             </button>
           </NavLink>
 
-          <NavLink to="/contact">
+          <NavLink to="/book-a-session">
             <button
               type="button"
               style={{
@@ -126,25 +126,36 @@ export default function Hero() {
               onMouseLeave={(e) => {
                 e.currentTarget.style.background = "rgba(255,255,255,0.1)";
                 e.currentTarget.style.transform = "translateY(0)";
-              }}
-            >
-              Book a Session
-            </button>
-          </NavLink>
-        </div>
+                }}
+              >
+                Book a Session
+              </button>
+              </NavLink>
+            </div>
 
-        <div
-          style={{
-            marginTop: "3rem",
-            display: "flex",
-            justifyContent: "center",
-            gap: "2rem",
-            flexWrap: "wrap",
-          }}
-        >
-          <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
             <div
               style={{
+              marginTop: "3rem",
+              display: "flex",
+              justifyContent: "center",
+              gap: "2rem",
+              flexWrap: "wrap",
+              }}
+            >
+              <a
+              href="tel:+6587784263"
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "0.5rem",
+                textDecoration: "none",
+                color: "inherit",
+                cursor: "pointer",
+              }}
+              aria-label="Call +65 8778 4263"
+              >
+              <div
+                style={{
                 width: "40px",
                 height: "40px",
                 background: "rgba(238,221,127,0.2)",
@@ -152,9 +163,9 @@ export default function Hero() {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-              }}
-            >
-              <svg
+                }}
+              >
+                <svg
                 width="20"
                 height="20"
                 viewBox="0 0 24 24"
@@ -162,20 +173,31 @@ export default function Hero() {
                 stroke="#eedd7f"
                 strokeWidth="2"
                 aria-label="Phone icon"
-              >
+                >
                 <title>Phone icon</title>
                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-              </svg>
-            </div>
-            <div style={{ textAlign: "left" }}>
-              <div style={{ fontSize: "0.8rem", opacity: 0.8 }}>Call</div>
-              <div style={{ fontWeight: 600 }}>+65 8778 4263</div>
-            </div>
-          </div>
+                </svg>
+              </div>
+              <div style={{ textAlign: "left" }}>
+                <div style={{ fontSize: "0.8rem", opacity: 0.8 }}>Call</div>
+                <div style={{ fontWeight: 600 }}>+65 8778 4263</div>
+              </div>
+              </a>
 
-          <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-            <div
+              <a
+              href="mailto:alvis.loh.yx.6604@gmail.com"
               style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "0.5rem",
+                textDecoration: "none",
+                color: "inherit",
+                cursor: "pointer",
+              }}
+              aria-label="Email alvis.loh.yx.6604@gmail.com"
+              >
+              <div
+                style={{
                 width: "40px",
                 height: "40px",
                 background: "rgba(238,221,127,0.2)",
@@ -183,9 +205,9 @@ export default function Hero() {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-              }}
-            >
-              <svg
+                }}
+              >
+                <svg
                 width="20"
                 height="20"
                 viewBox="0 0 24 24"
@@ -193,21 +215,21 @@ export default function Hero() {
                 stroke="#eedd7f"
                 strokeWidth="2"
                 aria-label="Email icon"
-              >
+                >
                 <title>Email icon</title>
                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
                 <path d="M22 6l-10 7L2 6" />
-              </svg>
+                </svg>
+              </div>
+              <div style={{ textAlign: "left" }}>
+                <div style={{ fontSize: "0.8rem", opacity: 0.8 }}>Email</div>
+                <div style={{ fontWeight: 600 }}>alvis.loh.yx.6604@gmail.com</div>
+              </div>
+              </a>
             </div>
-            <div style={{ textAlign: "left" }}>
-              <div style={{ fontSize: "0.8rem", opacity: 0.8 }}>Email</div>
-              <div style={{ fontWeight: 600 }}>alvis.loh.yx.6604@gmail.com</div>
             </div>
-          </div>
-        </div>
-      </div>
 
-      {/* Animated decorative elements */}
+            {/* Animated decorative elements */}
       <div
         style={{
           position: "absolute",

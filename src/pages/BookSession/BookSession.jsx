@@ -11,7 +11,7 @@ export default function BookSession() {
     script.src = "https://assets.calendly.com/assets/external/widget.js";
     script.async = true;
     document.body.appendChild(script);
-  }, [location.pathname]); // Reload script when path changes
+  }, []); // Load script only once when component mounts
 
   return (
     <>
@@ -21,7 +21,7 @@ export default function BookSession() {
         className="calendly-inline-widget"
         data-url="https://calendly.com/alvisloh_sg"
         style={{ minWidth: "320px", height: "80vh" }}
-      ></div>
+      />
       <Footer />
     </>
   );
