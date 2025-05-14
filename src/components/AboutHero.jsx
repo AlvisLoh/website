@@ -1,39 +1,96 @@
-export default function AboutHero() {
-  return (
-    <>
-      <div id="container-about">
-        <img
-          src="/website/alvis-loh-portrait.jpg"
-          alt="A portrait of Alvis Loh"
-        />
-        <div id="container-about-writeup">
-          <h1> Welcome to My Journey</h1>
-          <p>
-            Hello, I’m Alvis Loh—a Certified Life Coach and Senior Military
-            Intelligence Expert (SMIE) serving as an ME-4 Intelligence Officer
-            in Singapore’s Digital and Intelligence Service (DIS).
-            <br />
-            <br />
-            My career spans military intelligence, cybersecurity, data
-            analytics, and leadership—fields that demand precision,
-            adaptability, and resilience. As an officer, I navigate complex
-            intelligence operations, leveraging my expertise in geopolitics,
-            crisis management, and technology to safeguard national security.
-            <br />
-            <br />
-            Beyond the military, I am deeply passionate about personal
-            development and coaching. Having graduated with a Diploma in
-            Business Management (Merit) from Nanyang Polytechnic, I have honed
-            my skills in strategic planning, leadership, and innovation.
-            <br />
-            <br />I believe in empowering individuals to overcome challenges,
-            unlock their potential, and create meaningful impact in their lives.
-            Whether in the field of intelligence or personal growth, my mission
-            remains the same—to lead, inspire, and drive transformation. Let’s
-            connect and explore how we can grow together!
-          </p>
-        </div>
+import React from "react";
+import portrait from "/portrait.jpg";
+
+const AboutHero = () => (
+  <section
+    style={{
+      background: "#150a1f",
+      color: "#eedd7f",
+      padding: "3rem 1.5rem",
+      display: "flex",
+      flexDirection: "row",
+      alignItems: "flex-start",
+      borderRadius: 0,
+      boxShadow: "0 8px 32px rgba(0,0,0,0.25)",
+      maxWidth: 900,
+      margin: "2rem auto",
+      gap: "2.5rem",
+    }}
+  >
+    <div style={{ flex: 1, maxWidth: 600 }}>
+      <h1 style={{ fontSize: "2.5rem", fontWeight: 700, margin: 0, color: "#eedd7f" }}>Alvis Loh</h1>
+      <h2 style={{ fontSize: "1.25rem", fontWeight: 400, color: "#fff", margin: "0.25rem 0 1.5rem" }}>
+        Life Coach &amp; Intelligence Officer
+      </h2>
+
+      <div style={{ maxWidth: 700 }}>
+        <h3 style={{ fontSize: "1.15rem", fontWeight: 600, margin: "1.5rem 0 0.5rem", color: "#eedd7f" }}>
+          Professional Profile
+        </h3>
+        <p style={{ margin: "0 0 1.5rem", color: "#fff" }}>
+          <span style={{ fontWeight: 600, color: "#eedd7f" }}>Transforming Challenges Into Opportunities</span>
+          <br />
+          As a Certified Life Coach and Senior Military Intelligence Expert, I bring a unique combination of strategic thinking, emotional intelligence, and leadership experience to help individuals and organizations achieve their full potential.
+        </p>
+
+        <h3 style={{ fontSize: "1.15rem", fontWeight: 600, margin: "1.5rem 0 0.5rem", color: "#eedd7f" }}>
+          Military Career
+        </h3>
+        <ul style={{ listStyle: "disc inside", margin: "0 0 1.5rem", padding: 0, color: "#fff" }}>
+          <li>ME-4 Intelligence Officer, DIS</li>
+          <li>Specialized in cybersecurity &amp; data analytics</li>
+          <li>Crisis management &amp; strategic planning</li>
+        </ul>
+
+        <h3 style={{ fontSize: "1.15rem", fontWeight: 600, margin: "1.5rem 0 0.5rem", color: "#eedd7f" }}>
+          Education &amp; Skills
+        </h3>
+        <ul style={{ listStyle: "disc inside", margin: "0 0 1.5rem", padding: 0, color: "#fff" }}>
+          <li>Diploma in Business Management (Merit)</li>
+          <li>Certified Professional Coach</li>
+          <li>Leadership &amp; team development</li>
+        </ul>
+
+        <blockquote
+          style={{
+            fontStyle: "italic",
+            color: "#fff",
+            borderLeft: "4px solid #eedd7f",
+            paddingLeft: "1rem",
+            margin: "1.5rem 0",
+          }}
+        >
+          "My approach combines military precision with compassionate coaching to help clients break through barriers and achieve extraordinary results."
+        </blockquote>
+
+        <h3 style={{ fontSize: "1.15rem", fontWeight: 600, margin: "1.5rem 0 0.5rem", color: "#eedd7f" }}>
+          My Philosophy
+        </h3>
+        <p style={{ margin: "0 0 1.5rem", color: "#fff" }}>
+          I believe true success comes from aligning purpose, potential, and performance. Whether navigating complex security challenges or personal growth journeys, the principles of clarity, resilience, and strategic action remain constant.
+        </p>
+        <p style={{ fontWeight: 600, color: "#eedd7f", margin: 0 }}>
+          Let's collaborate to unlock your next level of achievement.
+        </p>
       </div>
-    </>
-  );
-}
+    </div>
+    <div style={{ flexShrink: 0, display: "flex", alignItems: "flex-start" }}>
+      <img
+        src={portrait}
+        alt="Alvis Loh Portrait"
+        style={{
+          width: 220,
+          height: 220,
+          objectFit: "cover",
+          borderRadius: 0,
+          border: "none",
+          marginBottom: 0,
+          boxShadow: "none",
+          background: "#222",
+        }}
+      />
+    </div>
+  </section>
+);
+
+export default AboutHero;
