@@ -22,3 +22,31 @@ body::before {
   z-index: -1;
   pointer-events: none;
 }
+
+/* Responsive utility classes and global tweaks */
+@media (max-width: 700px) {
+  html,
+  body {
+    font-size: 16px;
+  }
+  .calendly-inline-widget {
+    min-width: 0 !important;
+    width: 100vw !important;
+    padding: 0 !important;
+  }
+  .responsive-padding {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  .responsive-margin {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+  }
+}
+
+@media (max-width: 400px) {
+  html,
+  body {
+    font-size: 15px;
+  }
+}

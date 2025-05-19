@@ -1,7 +1,7 @@
-import React from 'react';
-import NewFooter from '../../components/Footer';
-import Navbar from '../../components/Navbar';
-import { Link } from 'react-router-dom';
+import React from "react";
+import NewFooter from "../../components/Footer";
+import Navbar from "../../components/Navbar";
+import { Link } from "react-router-dom";
 
 const AboutCoaching = () => {
   return (
@@ -14,7 +14,16 @@ const AboutCoaching = () => {
           padding: "40px 0",
         }}
       >
+        <style>{`
+          @media (max-width: 700px) {
+            .about-coaching-section {
+              margin: 1.5rem 1rem !important;
+              padding: 2rem 1rem !important;
+            }
+          }
+        `}</style>
         <div
+          className="about-coaching-section"
           style={{
             maxWidth: "800px",
             margin: "0 auto",
